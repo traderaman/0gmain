@@ -65,9 +65,9 @@ bash <(wget -qO- https://raw.githubusercontent.com/astrostake/0G-Labs-script/ref
 ```
 DOWNLOAD SNAPSHOT
 ```
-systemctl stop zgs
-rm -rf $HOME/0g-storage-node/run/db/flow_db
-wget http://149.102.132.207/0g_storage/flow_db.tar.gz -O $HOME/0g-storage-node/run/db/flow_db.tar.gz && tar -xzvf $HOME/0g-storage-node/run/db/flow_db.tar.gz -C $HOME/0g-storage-node/run/db/
-systemctl start zgs
+sudo systemctl stop zgs
+sudo rm -rf $HOME/0g-storage-node/run/db/flow_db
+sudo wget http://149.102.132.207/0g_storage/flow_db.tar.gz -O $HOME/0g-storage-node/run/db/flow_db.tar.gz && tar -xzvf $HOME/0g-storage-node/run/db/flow_db.tar.gz -C $HOME/0g-storage-node/run/db/
+sudo systemctl start zgs
 sudo systemctl restart zgs && sudo systemctl status zgs
 ```
