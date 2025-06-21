@@ -54,6 +54,10 @@ sudo systemctl status zgs
 sudo apt install bc
 source <(curl -s https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/check_block.sh)
 ```
+STOP PROCESS 
+```
+sudo systemctl stop zgs
+```
 CHANGE RPC
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/change_storage_rpc.sh)
