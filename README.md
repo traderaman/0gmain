@@ -71,3 +71,9 @@ sudo wget http://149.102.132.207/0g_storage/flow_db.tar.gz -O $HOME/0g-storage-n
 sudo systemctl start zgs
 sudo systemctl restart zgs && sudo systemctl status zgs
 ```
+
+
+ONE CLICK INSTALLER
+```
+source <(curl -s https://raw.githubusercontent.com/zstake-xyz/test/refs/heads/main/0g_storage_all-in-one.sh) # All-in-one.toml
+```
