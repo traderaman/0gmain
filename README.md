@@ -63,3 +63,14 @@ CHANGE RPC
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/change_storage_rpc.sh)
 ```
+DOWNLOAD SNAPSHOT
+```
+sudo systemctl stop zgs
+sudo apt-get update
+sudo apt-get install wget lz4 aria2 pv -y
+cd $HOME
+rm storage_0gchain_snapshot.lz4
+aria2c -x 5 -s 5 -k 1M https://josephtran.co/storage_0gchain_snapshot.lz4
+lz4 -c -d storage_0gchain_snapshot.lz4 | pv | tar -x -C $HOME/0g-storage-node/run
+sudo systemctl restart zgs && sudo systemctl status zgs
+```
