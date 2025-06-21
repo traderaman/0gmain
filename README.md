@@ -25,6 +25,7 @@ cargo build --release
 ```
 rm -rf $HOME/0g-storage-node/run/config.toml
 curl -o $HOME/0g-storage-node/run/config.toml https://raw.githubusercontent.com/Mayankgg01/0G-Storage-Node-Guide/main/config.toml
+sudo apt-get install nano -y
 nano $HOME/0g-storage-node/run/config.toml
 ```
 ```
