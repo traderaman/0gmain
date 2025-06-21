@@ -57,9 +57,4 @@ source <(curl -s https://raw.githubusercontent.com/astrostake/0G-Labs-script/ref
 CHANGE RPC
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/change_storage_rpc.sh)
-
-
-
-
-
-
+```
