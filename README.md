@@ -51,9 +51,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable zgs
 sudo systemctl start zgs
 sudo systemctl status zgs
-```
-```
 screen -S og
+```
+```
 sudo apt install bc
 source <(curl -s https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/check_block.sh)
 ```
